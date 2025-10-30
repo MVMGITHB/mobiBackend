@@ -7,6 +7,7 @@ const formSchema = new mongoose.Schema(
     phone: { type: String, trim: true },
     website: { type: String, required: true, trim: true },
     services: { type: [String], default: [] },
+    comment: { type: String, trim: true },
   },
   { timestamps: true }
 );

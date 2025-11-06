@@ -4,6 +4,9 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import formRoutes from "./routes/formRoutes.js";
+import categoryRoutes from './routes/categoryRoutes.js'; // Import the category routes
+import tagRoutes from './routes/tagRoutes.js'
+import blogRoutes from './routes/blogRoutes.js'
 
 import cors from "cors";
 
@@ -55,6 +58,9 @@ app.get('/', (req, res) => {
 });
 app.use("/api/auth", authRoutes);
 app.use("/api/forms", formRoutes);
+app.use("/api/catagory", categoryRoutes);
+app.use("/api/tag", tagRoutes);
+app.use("/api/blog", blogRoutes);
 
 
 

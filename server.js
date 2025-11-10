@@ -25,7 +25,9 @@ const allowedOrigins = new Set([
   "http://82.25.109.68:3005",
   "http://82.25.109.68:3005/",
   "https://mobiperform.com/",
-  "https://mobiperform.com"
+  "https://mobiperform.com",
+  "https://mobi-admin-latest.vercel.app/",
+  "https://mobi-admin-latest.vercel.app"
 
 ]);
 
